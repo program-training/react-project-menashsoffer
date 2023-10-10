@@ -1,12 +1,12 @@
-import './App.css'
+import "./App.css";
+import NavigationBar from "./mui/NavigationBar";
 
 function App() {
-
   return (
     <>
-      <div>hello !</div>
+      <NavigationBar />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
