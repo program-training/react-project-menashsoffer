@@ -10,18 +10,24 @@ import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRou
 
 export default function FormDialog() {
   const [open, setOpen] = React.useState(false);
+  const [currentButton, setCurrentButton] = React.useState(1);
 
   const handleClickOpen = () => {
+    setCurrentButton(0);
     setOpen(true);
   };
 
   const handleClose = () => {
+    setCurrentButton(1);
     setOpen(false);
   };
 
   return (
     <div>
-      <IconButton onClick={handleClickOpen}>
+      <IconButton
+        sx={{ color: currentButton === 0 ? "#1976d2" : " default" }}
+        onClick={handleClickOpen}
+      >
         <AddCircleOutlineRoundedIcon />
       </IconButton>
       <Dialog open={open} onClose={handleClose}>

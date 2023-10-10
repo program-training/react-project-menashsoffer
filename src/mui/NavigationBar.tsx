@@ -17,9 +17,9 @@ const NavigationBar = () => {
       <Box sx={{ borderBottom: 1, borderColor: "divider", display: "flex" }}>
         <Box sx={{ width: "80%" }}>
           <Tabs value={value} onChange={handleChange}>
-            <Tab label="Item One" />
-            <Tab label="Item Two" />
-            <Tab label="Item Three" />
+            <Tab label="Build a website" />
+            <Tab label="develop a mobil app" />
+            <Tab label="Organize a conference" />
           </Tabs>
         </Box>
         <Box
